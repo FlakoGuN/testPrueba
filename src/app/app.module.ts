@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
+import { StoreModule } from '@ngrx/store';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FilterPipe } from './filter.pipe';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    StoreModule.forRoot({}, {}),
     
   ],
   providers: [],
